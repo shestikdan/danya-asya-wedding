@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Даня & Ася — 31.10.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f4f0e8;--black:#11110f;--orange:#c95d2e;--muted:#716e67;--line:#d8d1c5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--black);font-family:Manrope,Arial,sans-serif}
+a{color:inherit}
+.page{max-width:1120px;margin:auto;padding:0 28px}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:space-between;padding:32px 0 56px}
+.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(76px,15vw,190px);font-weight:400;line-height:.72;letter-spacing:-.055em;margin:0}
+.hero h1 span{display:block}
+.hero-bottom{display:flex;justify-content:space-between;gap:30px;align-items:end}
+.date{font-family:"Cormorant Garamond",serif;font-size:34px;line-height:1.05}
+.intro{max-width:390px;font-size:14px;line-height:1.65}
+.orange{color:var(--orange)}
+.black-band{background:var(--black);color:var(--ivory);padding:70px 0}
+.black-band .page{display:flex;justify-content:space-between;gap:50px;align-items:end}
+.black-band h2{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:clamp(60px,10vw,125px);line-height:.78;margin:0;letter-spacing:-.04em}
+.black-band p{max-width:310px;font-size:13px;line-height:1.7;margin:0}
+.section{padding:95px 0}
+.section h2{font-family:"Cormorant Garamond",serif;font-size:58px;font-weight:400;line-height:.9;margin:0 0 45px;letter-spacing:-.03em}
+.details{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
+.detail{padding:22px 0 28px;border-bottom:1px solid var(--line)}
+.detail:nth-child(odd){padding-right:40px}
+.detail:nth-child(even){padding-left:40px;border-left:1px solid var(--line)}
+.label{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:12px}
+.value{font-family:"Cormorant Garamond",serif;font-size:31px;line-height:1.05}
+.note{font-size:12px;line-height:1.6;margin-top:10px}
+.link{display:inline-block;margin-top:12px;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+.form-wrap{max-width:760px}
+.intro-form{font-size:14px;line-height:1.7;max-width:620px;margin-bottom:50px}
+fieldset{border:0;padding:0;margin:0 0 42px}
+legend{font-family:"Cormorant Garamond",serif;font-size:30px;line-height:1.05;margin-bottom:17px}
+.required{color:var(--orange)}
+.option{display:block;margin:10px 0;font-size:14px;line-height:1.4}
+.option input{margin-right:10px;accent-color:var(--black)}
+input[type=text],textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--black);padding:13px 0;font:14px Manrope,sans-serif;color:var(--black);outline:0}
+textarea{min-height:100px;resize:vertical;border:1px solid var(--line);padding:14px}
+button{border:0;background:var(--orange);color:white;padding:17px 27px;font:600 12px Manrope,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+button:hover{opacity:.9}
+button:disabled{opacity:.6;cursor:default}
+.thanks{display:none;font-family:"Cormorant Garamond",serif;font-size:45px;line-height:1}
+.footer{padding:80px 0 45px;text-align:center}
+.footer .names{font-family:"Cormorant Garamond",serif;font-size:72px;line-height:.8}
+.small{font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-top:25px;color:var(--muted)}
+
+.hero-photo{width:100%;aspect-ratio:4/5;max-height:78vh;object-fit:cover;object-position:50% 25%;display:block;margin:0 0 36px}
+.photo-break{margin:0;padding:0}
+.photo-break img{width:100%;height:min(88vh,820px);object-fit:cover;object-position:50% 35%;display:block}
+.finale{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:95px 0}
+.finale img{width:100%;display:block}
+.finale .names{font-family:"Cormorant Garamond",serif;font-size:56px;line-height:.95}
+.finale .names em{display:block;font-style:normal;font-size:20px;line-height:1.4;margin-bottom:14px;color:var(--muted);font-family:Manrope,sans-serif;letter-spacing:.04em}
+.finale .small{margin-top:30px}
+@media(max-width:700px){
+ .finale{grid-template-columns:1fr;gap:32px;padding:70px 0}
+ .finale .names{font-size:46px}
+ .hero-photo{aspect-ratio:3/4}
+ .page{padding:0 20px}.hero{min-height:82vh;padding-top:25px}
+ .hero-bottom,.black-band .page{display:block}
+ .intro{margin-top:28px}.date{margin-top:30px}
+ .black-band h2{margin-bottom:35px}.section{padding:70px 0}
+ .section h2{font-size:48px;margin-bottom:35px}
+ .details{grid-template-columns:1fr}.detail:nth-child(even){padding-left:0;border-left:0}
+ .detail:nth-child(odd){padding-right:0}
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero page">
+  <div class="kicker">we're getting married</div>
+  <div><img class="hero-photo" src="img/hero.jpg" alt="Даня и Ася" fetchpriority="high"><h1><span>Даня</span><span class="orange">&amp; Ася</span></h1></div>
+  <div class="hero-bottom">
+    <div class="date">31 · 10 · 2026<br>Алматы</div>
+    <div class="intro">Всем привет! С вами Даня и Ася. Мы очень рады пригласить вас на нашу маленькую свадьбу!</div>
+  </div>
+</section>
+
+<section class="black-band">
+  <div class="page">
+    <h2>Total<br>Black</h2>
+    <p>dress code<br><br>Будем рады видеть вас в чёрном 🖤<br><br>Пожалуйста, не опаздывайте. Нам очень хочется начать церемонию вовремя.</p>
+  </div>
+</section>
+
+<section class="section page">
+  <h2>Когда<br>и где</h2>
+  <div class="details">
+    <div class="detail"><div class="label">Город</div><div class="value">Алматы</div></div>
+    <div class="detail"><div class="label">Место</div><div class="value">Villa Dei Fiori</div>
+      <a class="link" href="https://yandex.com/maps/org/villa_dei_fiori/205567142919?si=nkjgajmqu8wf5z0hv2xhwque70" target="_blank" rel="noopener">Открыть на карте ↗</a>
+    </div>
+    <div class="detail"><div class="label">Сбор гостей</div><div class="value">17:00</div></div>
+    <div class="detail"><div class="label">Церемония</div><div class="value">18:00</div></div>
+  </div>
+</section>
+
+<figure class="photo-break"><img src="img/bw.jpg" alt="" loading="lazy"></figure>
+
+<section class="section page" id="rsvp">
+  <div class="form-wrap">
+    <h2>RSVP</h2>
+    <p class="intro-form">Будем признательны, если вы заполните опрос до конца недели.</p>
+
+    <form id="rsvpForm">
+      <fieldset>
+        <legend>Имя и фамилия <span class="required">*</span></legend>
+        <input type="text" name="name" required placeholder="Ваше имя и фамилия">
+      </fieldset>
+
+      <fieldset>
+        <legend>1. Что предпочитаете на горячее? <span class="required">*</span></legend>
+        <label class="option"><input type="radio" name="food" value="Мясо" required> Мясо</label>
+        <label class="option"><input type="radio" name="food" value="Рыба"> Рыба</label>
+        <label class="option"><input type="radio" name="food" value="Вегетарианское блюдо"> Вегетарианское блюдо</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Алкоголь? <span class="required">*</span></legend>
+        <label class="option"><input type="checkbox" name="alcohol" value="Вино"> Вино</label>
+        <label class="option"><input type="checkbox" name="alcohol" value="Игристое / шампанское"> Игристое / шампанское</label>
+        <label class="option"><input type="checkbox" name="alcohol" value="Водка"> Водка</label>
+        <label class="option"><input type="checkbox" name="alcohol" value="Не пью алкоголь"> Не пью алкоголь</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Кальян? <span class="required">*</span></legend>
+        <label class="option"><input type="radio" name="hookah" value="Да" required> Да</label>
+        <label class="option"><input type="radio" name="hookah" value="Нет"> Нет</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Хотите сказать тост / поздравление для всех?</legend>
+        <label class="option"><input type="radio" name="toast" value="Да, хочу сказать тост"> Да, хочу сказать тост</label>
+        <label class="option"><input type="radio" name="toast" value="Нет, поздравлю лично"> Нет, поздравлю лично</label>
+        <label class="option"><input type="radio" name="toast" value="Пока не уверен(а)"> Пока не уверен(а)</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Если вы приезжаете из другого города — в какие даты будете в Алматы?</legend>
+        <input type="text" name="dates" placeholder="Например: 30 октября — 1 ноября">
+      </fieldset>
+
+      <fieldset>
+        <legend>6. Нужна ли помощь с проживанием?</legend>
+        <label class="option"><input type="radio" name="hotel" value="Да"> Да</label>
+        <label class="option"><input type="radio" name="hotel" value="Нет"> Нет</label>
+        <label class="option"><input type="radio" name="hotel" value="Пока не уверен(а)"> Пока не уверен(а)</label>
+        <div class="note">Можно будет забронировать отель рядом с местом свадьбы со небольшой скидкой.</div>
+        <a class="link" href="https://www.booking.com/Share-YuENH7c" target="_blank" rel="noopener">Посмотреть вариант отеля ↗</a>
+      </fieldset>
+
+      <fieldset>
+        <legend>7. Аллергии, ограничения в питании или продукты, которые вы не едите?</legend>
+        <textarea name="restrictions" placeholder="Напишите здесь, если что-то нужно учесть"></textarea>
+      </fieldset>
+
+      <button type="submit">Отправить ответ</button>
+    </form>
+    <div class="thanks" id="thanks">Спасибо!<br>До встречи 31 октября.</div>
+  </div>
+</section>
+
+<footer class="page finale">
+  <img src="img/ring.jpg" alt="Кольцо" loading="lazy">
+  <div>
+    <div class="names"><em>До встречи,</em>ваши Даня<br>и Ася</div>
+    <div class="small">31 · 10 · 2026</div>
+  </div>
+</footer>
+</main>
+
+<script>
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbwFlWxcjMG2owpFedD5ioTqgQFKIHmrRnf01nLY1pCN1mj18vQn1yxKKAuvGlZATqQF/exec"; // сюда вставьте URL /exec из Google Apps Script
+
+document.getElementById("rsvpForm").addEventListener("submit", async function(e){
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const btn = form.querySelector("button");
+  const data = {
+    name: form.name.value.trim(),
+    food: form.food.value,
+    alcohol: [...form.querySelectorAll('input[name="alcohol"]:checked')].map(x=>x.value).join(", "),
+    hookah: form.hookah.value,
+    toast: form.toast.value || "",
+    dates: form.dates.value.trim(),
+    hotel: form.hotel.value || "",
+    restrictions: form.restrictions.value.trim()
+  };
+
+  if (!ENDPOINT) {
+    form.style.display = "none";
+    document.getElementById("thanks").style.display = "block";
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = "Отправляем…";
+  try {
+    await fetch(ENDPOINT, {
+      method:"POST",
+      mode:"no-cors",
+      headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body:JSON.stringify(data)
+    });
+    form.style.display = "none";
+    document.getElementById("thanks").style.display = "block";
+  } catch(err) {
+    btn.disabled = false;
+    btn.textContent = "Отправить ответ";
+    alert("Не удалось отправить форму. Попробуйте ещё раз.");
+  }
+});
+</script>
+</body>
+</html>
